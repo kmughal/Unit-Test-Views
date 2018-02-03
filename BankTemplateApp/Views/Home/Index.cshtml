@@ -1,0 +1,17 @@
+﻿@using BankTemplateApp.ViewModels
+@model BankTemplateApp.ViewModels.ClientRecords
+    
+
+<div id="records-container">
+    @foreach (ClientRecord record in Model.Records)
+    {
+        <div class="record">
+            <h1>
+                @record.FullName
+            </h1>
+            <address>
+                @record.Address
+            </address>
+        </div>
+    }
+</div>
